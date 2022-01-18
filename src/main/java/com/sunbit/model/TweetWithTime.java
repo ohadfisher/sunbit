@@ -9,11 +9,6 @@ public class TweetWithTime implements Comparable<TweetWithTime> {
     public TweetWithTime(int tweet) {
         this.time = LocalTime.now();
         this.tweet = tweet;
-        try {
-            Thread.sleep(1);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
     }
 
     public LocalTime gAetTime() {

@@ -18,6 +18,11 @@ public class TwitterUser {
     }
 
     synchronized public void postTweet(int tweetId) {
+        try {
+            Thread.sleep(1);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         tweetsWithTime.add(new TweetWithTime(tweetId));
     }
 
